@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "as_of": "2026-09-24",
+  "generated_by": "cloud-routine weekly-deposit-rates",
+  "hysa": [
+    {"bank": "Ally Bank", "list": "watch", "apy": 3.00, "min": 0, "promo": false, "promo_end": null,
+     "conditions": "", "source": "https://www.ally.com/bank/online-savings-account/", "source_date": "2026-09-23", "confidence": "low", "note": "WebFetch 차단으로 공식페이지 직접 확인 불가, WebSearch 요약 기반"},
+    {"bank": "Marcus by Goldman Sachs", "list": "watch", "apy": 3.50, "min": 0, "promo": false, "promo_end": null,
+     "conditions": "", "source": "https://www.marcus.com/us/en/savings/high-yield-savings", "source_date": "2026-09-24", "confidence": "low", "note": "WebFetch 차단으로 공식페이지 직접 확인 불가, WebSearch 요약 기반"},
+    {"bank": "Synchrony Bank", "list": "watch", "apy": 3.30, "min": 0, "promo": false, "promo_end": null,
+     "conditions": "", "source": "https://smartasset.com/checking-account/synchrony-banking-review", "source_date": "2026-08-15", "confidence": "low", "note": "소스 간 불일치: 다른 소스(CNBC, 2026-02)는 3.50% 로 기재 — 최신 갱신값 채택, 미확인"},
+    {"bank": "American Express National Bank", "list": "watch", "apy": 3.00, "min": 0, "promo": false, "promo_end": null,
+     "conditions": "", "source": "https://www.americanexpress.com/en-us/banking/online-savings/high-yield-savings-account/", "source_date": "2026-09-23", "confidence": "low", "note": "WebFetch 차단으로 공식페이지 직접 확인 불가, WebSearch 요약 기반"},
+    {"bank": "Capital One 360", "list": "watch", "apy": 3.00, "min": 0, "promo": false, "promo_end": null,
+     "conditions": "", "source": "https://www.capitalone.com/bank/savings-accounts/online-performance-savings-account/", "source_date": "2026-09-15", "confidence": "low", "note": "소스 간 수치 불일치(2026-05: 3.10%, 2026-06: 4.10%로 보도된 자료도 있음) — 최근 하락 추세 반영한 최신값 채택, 미확인"},
+    {"bank": "Axos Bank", "list": "market", "apy": 4.21, "min": 0, "promo": false, "promo_end": null,
+     "conditions": "Axos ONE Savings and Checking 결합상품 조건부일 수 있음, 최소금액 미확인", "source": "https://www.cnbc.com/select/best-high-yield-savings-accounts/", "source_date": "2026-09-23", "confidence": "low", "note": "WebFetch 차단, WebSearch 요약 기반"},
+    {"bank": "Happen Bank", "list": "market", "apy": 4.20, "min": 0, "promo": true, "promo_end": null,
+     "conditions": "매월 $250 이상 자동입금 필요(LevelUp Savings)", "source": "https://www.bankrate.com/banking/savings/best-high-yield-interests-savings-accounts/", "source_date": "2026-09-23", "confidence": "low", "note": "WebFetch 차단, WebSearch 요약 기반"}
+  ],
+  "cd": [
+    {"bank": "Ally Bank", "list": "watch", "term_months": 12, "apy": 4.00, "min": 0, "promo": false, "promo_end": null,
+     "conditions": "", "source": "https://www.ally.com/bank/high-yield-cd/", "source_date": "2026-09-19", "confidence": "low", "note": "WebFetch 차단으로 공식페이지 직접 확인 불가, WebSearch 요약 기반"},
+    {"bank": "Marcus by Goldman Sachs", "list": "watch", "term_months": 12, "apy": 3.90, "min": 500, "promo": false, "promo_end": null,
+     "conditions": "", "source": "https://www.marcus.com/us/en/savings/high-yield-cds/cd-rates", "source_date": "2026-09-18", "confidence": "low", "note": "WebFetch 차단으로 공식페이지 직접 확인 불가, WebSearch 요약 기반"},
+    {"bank": "Synchrony Bank", "list": "watch", "term_months": 12, "apy": 3.70, "min": 0, "promo": false, "promo_end": null,
+     "conditions": "", "source": "https://www.synchrony.com/banking/products/cd", "source_date": "2026-09-15", "confidence": "low", "note": "WebFetch 차단, 정확한 as-of 날짜 미확인(대략치), WebSearch 요약 기반"},
+    {"bank": "American Express National Bank", "list": "watch", "term_months": 12, "apy": null, "min": 0, "promo": false, "promo_end": null,
+     "conditions": "", "source": "", "source_date": "", "confidence": "none", "note": "검색으로 2026-03 시점 수치(3.25%)와 일반 범위(2.25~4.25%)만 확인, 현재 값 특정 불가. WebFetch 전면 차단으로 공식페이지 확인도 불가"},
+    {"bank": "Capital One 360", "list": "watch", "term_months": 11, "apy": 4.30, "min": 0, "promo": true, "promo_end": null,
+     "conditions": "한시적 프로모션 11개월 CD(일반 12개월 상품과 다름)", "source": "https://www.capitalone.com/bank/cds/online-cds/", "source_date": "2026-09-23", "confidence": "low", "note": "WebFetch 차단, WebSearch 요약 기반"},
+    {"bank": "Bask Bank", "list": "market", "term_months": 12, "apy": 4.15, "min": 1000, "promo": false, "promo_end": null,
+     "conditions": "", "source": "https://finance.yahoo.com/personal-finance/banking/article/best-1-year-cd-rates-211702415.html", "source_date": "2026-09-23", "confidence": "low", "note": "WebFetch 차단, WebSearch 요약 기반"},
+    {"bank": "Live Oak Bank", "list": "market", "term_months": 12, "apy": 4.10, "min": 0, "promo": false, "promo_end": null,
+     "conditions": "최소금액 미확인", "source": "https://finance.yahoo.com/personal-finance/banking/article/best-1-year-cd-rates-211702415.html", "source_date": "2026-09-23", "confidence": "low", "note": "WebFetch 차단, WebSearch 요약 기반"},
+    {"bank": "Happen Bank", "list": "market", "term_months": 24, "apy": 4.40, "min": 0, "promo": false, "promo_end": null,
+     "conditions": "최소금액 미확인", "source": "https://finance.yahoo.com/personal-finance/banking/article/best-cd-rates-today-wednesday-september-23-2026-earn-up-to-440-apy-with-happen-bank-100000312.html", "source_date": "2026-09-23", "confidence": "low", "note": "WebFetch 차단, WebSearch 요약 기반"},
+    {"bank": "BTG Pactual Bank", "list": "market", "term_months": 12, "apy": 4.45, "min": 500, "promo": false, "promo_end": null,
+     "conditions": "", "source": "https://www.bankrate.com/banking/cds/best-1-year-cd-rates/", "source_date": "2026-09-23", "confidence": "low", "note": "WebFetch 차단, WebSearch 요약 기반"},
+    {"bank": "Capital One 360", "list": "market", "term_months": 12, "apy": 4.00, "min": 0, "promo": false, "promo_end": null,
+     "conditions": "", "source": "https://finance.yahoo.com/personal-finance/banking/article/best-1-year-cd-rates-211702415.html", "source_date": "2026-09-23", "confidence": "low", "note": "watch 목록의 11개월 프로모션과 별개인 일반 12개월 상품 수치, WebSearch 요약 기반"}
+  ],
+  "notes": [
+    "이번 실행에서 WebFetch 도구가 모든 도메인(은행 공식페이지, Bankrate, Wikipedia 등)에 대해 네트워크 egress 프록시로 전면 차단됨을 확인 — 공식페이지 직접 확인(high/medium 신뢰도) 불가, 전 항목 WebSearch 요약 기반(low) 또는 미확인(none)으로 처리함.",
+    "DepositAccounts·NerdWallet 은 절차서 지침에 따라 시도하지 않음(구 확인: 403 차단).",
+    "First National Bank of America 최고 CD(4.60%)는 3개월~10년 범위로만 보도되어 특정 기간과 매칭 불가 — 시장 목록에서 제외.",
+    "Synchrony HYSA·Capital One 360 HYSA 는 소스 간 수치 불일치가 있어 최신 갱신값을 채택했으나 확인이 필요함.",
+    "첫 실행(v2 재설계 이후 최초) — 지난주 데이터 없어 전주 대비 비교 없음."
+  ]
+}
